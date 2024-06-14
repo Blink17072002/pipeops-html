@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Health App</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">HePo</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="meal-tracker.html">Track Meals</a></li>
+                <li><a href="meal-history.html">Meal History</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="settings.html">Settings</a></li>
+                <li><a href="logout.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="dashboard-overview">
+            <h2>Welcome, [User]</h2>
+            <p>Here’s an overview of your recent activity.</p>
+            <div class="overview-cards">
+                <div class="card">
+                    <h3>Recent Meals</h3>
+                    <p>View your most recent meals logged.</p>
+                </div>
+                <div class="card">
+                    <h3>Health Tips</h3>
+                    <p>Get personalized tips based on your meals.</p>
+                </div>
+                <div class="card">
+                    <h3>Progress</h3>
+                    <p>Track your progress over time.</p>
+                </div>
+            </div>
+        </section>
+        <section class="charts-section">
+            <h3>Calorie and Nutrient Distribution</h3>
+            <canvas id="calorieChart" width="400" height="400"></canvas>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 HePo. All rights reserved.</p>
+    </footer>
+    <script src="dashboard.js"></script>
+</body>
+
+</html>
